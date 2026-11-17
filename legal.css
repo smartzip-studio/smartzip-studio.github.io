@@ -1,0 +1,26 @@
+/* Shared styles for the legal pages (privacy policy, accessibility statement) */
+:root{--ink:#0B1E5B;--text:#2A3150;--muted:#626A86;--line:#E3E7EF;--pen:#1489F5;--marker:#FFE45C;--white:#fff}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:"Assistant",system-ui,sans-serif;font-size:1.0625rem;line-height:1.8;color:var(--text);background:var(--white)}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--pen);outline-offset:3px;border-radius:4px}
+.skip-link{position:absolute;inset-inline-start:16px;top:-100px;background:var(--ink);color:#fff;padding:.5em 1em;border-radius:8px;z-index:100}
+.skip-link:focus{top:12px}
+.container{width:min(760px,100% - 32px);margin-inline:auto}
+header{border-bottom:1px solid var(--line)}
+header .container{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px;width:min(1120px,100% - 32px)}
+header img{width:140px;height:auto;display:block}
+.back{font-weight:700;text-decoration:none;border-bottom:1.5px solid var(--ink);padding-bottom:2px}
+main{padding:56px 0 80px}
+h1,h2{font-family:"Secular One",sans-serif;font-weight:400;color:var(--ink);line-height:1.2}
+h1{font-size:clamp(2rem,5vw,2.8rem);margin:0 0 .3em}
+h1 span{background:linear-gradient(var(--marker),var(--marker)) right 88%/100% 42% no-repeat;padding-inline:.1em}
+h2{font-size:1.35rem;margin:2em 0 .5em}
+.updated{color:var(--muted);margin:0 0 2em}
+p,ul{margin:0 0 1em}
+ul{padding-inline-start:1.3em}
+li{margin-bottom:.35em}
+.box{border:1.5px solid var(--ink);border-radius:14px;padding:20px 24px;margin-top:2em}
+.box p:last-child{margin:0}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem}
+footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;width:min(1120px,100% - 32px)}
